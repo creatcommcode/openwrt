@@ -62,7 +62,8 @@ ipq40xx_setup_interfaces()
 	compex,wpj419|\
 	compex,wpj428|\
 	engenius,eap2200|\
-	creatcomm,ta8k)
+	creatcomm,ta8k|\
+	creatcomm,ta8kc)
 		ucidef_set_interface_lan "eth0 eth1"
 		;;
 	cellc,rtl30vw)
