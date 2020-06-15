@@ -61,7 +61,8 @@ ipq40xx_setup_interfaces()
 	avm,fritzrepeater-3000|\
 	compex,wpj419|\
 	compex,wpj428|\
-	engenius,eap2200)
+	engenius,eap2200|\
+	creatcomm,ta8k)
 		ucidef_set_interface_lan "eth0 eth1"
 		;;
 	cellc,rtl30vw)
