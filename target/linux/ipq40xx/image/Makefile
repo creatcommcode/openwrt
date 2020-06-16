@@ -432,4 +432,18 @@ define Device/cc_ta8k
 endef
 TARGET_DEVICES += cc_ta8k
 
+define Device/cc_ta8kc
+	$(call Device/FitImage)
+	DEVICE_VENDOR := Creatcomm
+	DEVICE_MODEL := TA8KC
+	SOC := qcom-ipq4028
+	DEVICE_DTS_CONFIG := config@4
+	BLOCKSIZE := 64k
+	IMAGE_SIZE := 31232k
+	KERNEL_SIZE := 4096k
+	IMAGES = sysupgrade.bin
+	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
+endef
+TARGET_DEVICES += cc_ta8kc
+
 $(eval $(call BuildImage))

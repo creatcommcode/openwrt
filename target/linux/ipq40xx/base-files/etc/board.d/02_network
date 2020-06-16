@@ -49,7 +49,8 @@ ipq40xx_setup_interfaces()
 		;;
 	avm,fritzrepeater-3000|\
 	compex,wpj428|\
-	creatcomm,ta8k)
+	creatcomm,ta8k|\
+	creatcomm,ta8kc)
 		ucidef_set_interface_lan "eth0 eth1"
 		;;
 	glinet,gl-b1300)
