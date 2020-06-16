@@ -420,11 +420,10 @@ TARGET_DEVICES += zyxel_wre6606
 
 define Device/cc_ta8k
 	$(call Device/FitImage)
-	DEVICE_VENDOR := Creatcomm
-	DEVICE_MODEL := TA8K
-	SOC := qcom-ipq4028
+	DEVICE_DTS := qcom-ipq4028-ta8k
 	DEVICE_DTS_CONFIG := config@4
 	BLOCKSIZE := 64k
+	DEVICE_TITLE := Creatcomm TA8K
 	IMAGE_SIZE := 31232k
 	KERNEL_SIZE := 4096k
 	IMAGES = sysupgrade.bin
@@ -434,11 +433,10 @@ TARGET_DEVICES += cc_ta8k
 
 define Device/cc_ta8kc
 	$(call Device/FitImage)
-	DEVICE_VENDOR := Creatcomm
-	DEVICE_MODEL := TA8KC
-	SOC := qcom-ipq4028
+	DEVICE_DTS := qcom-ipq4028-ta8kc
 	DEVICE_DTS_CONFIG := config@4
 	BLOCKSIZE := 64k
+	DEVICE_TITLE := Creatcomm TA8KC
 	IMAGE_SIZE := 31232k
 	KERNEL_SIZE := 4096k
 	IMAGES = sysupgrade.bin
