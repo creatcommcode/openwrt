@@ -143,7 +143,8 @@ case "$FIRMWARE" in
 		;;
 	compex,wpj428 |\
 	openmesh,a42 |\
-	openmesh,a62)
+	openmesh,a62 |\
+	creatcomm,ta8k)
 		ath10kcal_extract "0:ART" 4096 12064
 		;;
 	zyxel,wre6606)
@@ -178,7 +179,8 @@ case "$FIRMWARE" in
 		;;
 	compex,wpj428 |\
 	openmesh,a42 |\
-	openmesh,a62)
+	openmesh,a62 |\
+	creatcomm,ta8k)
 		ath10kcal_extract "0:ART" 20480 12064
 		;;
 	zyxel,wre6606)
