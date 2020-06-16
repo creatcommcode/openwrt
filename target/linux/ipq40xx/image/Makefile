@@ -418,4 +418,18 @@ define Device/zyxel_wre6606
 endef
 TARGET_DEVICES += zyxel_wre6606
 
+define Device/cc_ta8k
+	$(call Device/FitImage)
+	DEVICE_VENDOR := Creatcomm
+	DEVICE_MODEL := TA8K
+	SOC := qcom-ipq4028
+	DEVICE_DTS_CONFIG := config@4
+	BLOCKSIZE := 64k
+	IMAGE_SIZE := 31232k
+	KERNEL_SIZE := 4096k
+	IMAGES = sysupgrade.bin
+	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
+endef
+TARGET_DEVICES += cc_ta8k
+
 $(eval $(call BuildImage))

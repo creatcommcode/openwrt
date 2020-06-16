@@ -162,7 +162,8 @@ case "$FIRMWARE" in
 	openmesh,a42 |\
 	openmesh,a62 |\
 	qxwlan,e2600ac-c1 |\
-	qxwlan,e2600ac-c2)
+	qxwlan,e2600ac-c2 |\
+	creatcomm,ta8k)
 		ath10kcal_extract "0:ART" 4096 12064
 		;;
 	engenius,ens620ext)
@@ -224,7 +225,8 @@ case "$FIRMWARE" in
 	openmesh,a42 |\
 	openmesh,a62 |\
 	qxwlan,e2600ac-c1 |\
-	qxwlan,e2600ac-c2)
+	qxwlan,e2600ac-c2 |\
+	creatcomm,ta8k)
 		ath10kcal_extract "0:ART" 20480 12064
 		;;
 	engenius,ens620ext)
