@@ -287,4 +287,5 @@ obj-$(CONFIG_ATH79_MACH_Z1)			+= mach-z1.o
 obj-$(CONFIG_ATH79_MACH_ZBT_WE1526)		+= mach-zbt-we1526.o
 obj-$(CONFIG_ATH79_MACH_ZCN_1523H)		+= mach-zcn-1523h.o
 obj-$(CONFIG_ATH79_MACH_CREATCOMM_TB2I)		+= mach-tb2i.o
+obj-$(CONFIG_ATH79_MACH_CREATCOMM_TB2Q)         += mach-tb2q.o
 
