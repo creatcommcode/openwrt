@@ -1350,3 +1350,12 @@ define Device/fritz450e
   IMAGE_SIZE := 15232k
 endef
 TARGET_DEVICES += fritz450e
+
+define Device/cc_tb2i
+  DEVICE_PACKAGES := kmod-ath9k
+  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,7808k(firmware),64k(art)ro
+  IMAGE_SIZE := 7808k
+  DEVICE_TITLE := Creatcomm TB2I (8MB flash)
+  BOARDNAME := TB2I
+endef
+TARGET_DEVICES += cc_tb2i

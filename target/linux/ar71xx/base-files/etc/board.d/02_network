@@ -188,7 +188,8 @@ ar71xx_setup_interfaces()
 	dlan-pro-500-wp|\
 	ja76pf2|\
 	rocket-m-ti|\
-	ubnt-unifi-outdoor)
+	ubnt-unifi-outdoor|\
+	tb2i)
 		ucidef_set_interface_lan "eth0 eth1"
 		;;
 	wzr-hp-g300nh2)
