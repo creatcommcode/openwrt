@@ -189,7 +189,8 @@ ar71xx_setup_interfaces()
 	ja76pf2|\
 	rocket-m-ti|\
 	ubnt-unifi-outdoor|\
-	tb2i)
+	tb2i|\
+	tb2q)
 		ucidef_set_interface_lan "eth0 eth1"
 		;;
 	wzr-hp-g300nh2)
