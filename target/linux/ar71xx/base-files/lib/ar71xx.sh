@@ -1539,6 +1539,9 @@ ar71xx_board_detect() {
 	*"TB2Q")
 		name="tb2q"
 		;;
+	*"TA8H")
+		name="ta8h"
+		;;
 	esac
 
 	[ -z "$AR71XX_MODEL" ] && [ "${machine:0:8}" = 'TP-LINK ' ] && \

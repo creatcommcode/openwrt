@@ -374,8 +374,9 @@ enum ath79_mach_type {
 	ATH79_MACH_ZBT_WE1526,			/* Zbtlink ZBT-WE1526 */
 	ATH79_MACH_ZCN_1523H_2,			/* Zcomax ZCN-1523H-2-xx */
 	ATH79_MACH_ZCN_1523H_5,			/* Zcomax ZCN-1523H-5-xx */
-	ATH79_MACH_CREATCOMM_TB2I,      /* Creatcomm TB2I */
-	ATH79_MACH_CREATCOMM_TB2Q,      /* Creatcomm TB2Q */
+	ATH79_MACH_CREATCOMM_TB2I,		/* Creatcomm TB2I */
+	ATH79_MACH_CREATCOMM_TB2Q,		/* Creatcomm TB2Q */
+	ATH79_MACH_CREATCOMM_TA8H,		/* Creatcomm TA8H */
 };
 
 #endif /* _ATH79_MACHTYPE_H */

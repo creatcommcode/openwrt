@@ -1407,3 +1407,14 @@ define Device/cc_tb2q
 endef
 
 TARGET_DEVICES += cc_tb2q
+
+define Device/cc_ta8h
+  DEVICE_PACKAGES := kmod-ath9k kmod-ath10k-ct ath10k-firmware-qca988x-ct
+  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)ro
+  IMAGE_SIZE := 16000k
+  DEVICE_TITLE := Creatcomm TA8H
+  BOARDNAME := TA8H
+endef
+
+TARGET_DEVICES += cc_ta8h
+

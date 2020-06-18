@@ -2437,3 +2437,14 @@ config ATH79_MACH_CREATCOMM_TB2Q
         select ATH79_DEV_LEDS_GPIO
         select ATH79_DEV_M25P80
         select ATH79_DEV_WMAC
+
+config ATH79_MACH_CREATCOMM_TA8H
+	bool "Creatcomm TA8H board support"
+	select SOC_QCA955X
+	select ATH79_DEV_AP9X_PCI if PCI
+	select ATH79_DEV_ETH
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_M25P80
+	select ATH79_DEV_WMAC
+

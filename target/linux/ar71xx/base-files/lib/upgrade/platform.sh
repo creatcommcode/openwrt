@@ -326,7 +326,8 @@ platform_check_image() {
 	wzr-hp-g450h|\
 	xd3200|\
 	tb2i|\
-	tb2q)
+	tb2q|\
+	ta8h)
 		[ "$magic" != "2705" ] && {
 			echo "Invalid image type."
 			return 1
